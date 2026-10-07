@@ -48,6 +48,7 @@ for task in tasks:
     # border=true를 주면 각 반복 요소가 단정한 상자로 감싸집니다.
 
     with st.container(border=true):
+        
         st.write(task)
 
         import streamlit as at
