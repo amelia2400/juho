@@ -16,8 +16,8 @@ with st.form("my_form"):
 st.session_state.login = True
 import streamlit as st
 
-st, title("주호의 첫 웹앱")
-st,info("파이썬만으로 제작하는 UI")
+st. title("주호의 첫 웹앱")
+st.info("파이썬만으로 제작하는 UI")
 
 col1, col2 = st.columns(2)
 with col1: 
