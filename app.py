@@ -31,7 +31,7 @@ if "user_list" not in st.session_state:
 
 with st.form("input_from"):
     name = st. text_input("이름") 
-    if st.from_submit_button("등록") and name:
+    if st.form_submit_button("등록") and name:
         st.session_state.user_list.append(name)
         
 
