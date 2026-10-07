@@ -1,6 +1,6 @@
 import streamlit as st
 st.title("메인 제목")
-st.info("빨간색 알림 박스")
+st.info("파란 알림 박스")
 st.success("초록색 성공 메세지")
 
 col1, col2 = st.columns(2)
