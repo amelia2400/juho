@@ -1,8 +1,10 @@
 import streamlit as st
 
 st.title("Your tasks")
-st.write("작은 계획부터 하나씩 완료해 봅시다")
-st.info("오늘 해야할 일을 입력하고 등록 버튼을 눌러주세요")
+st.caption("MY DAILY PLANNER")
+st.subheader("오늘도 우리, 하나씩 해나가 봅시다!")
+st.write("완벽한 준비보다 작은 시작이 먼저다.")
+st.info("오늘 해야할 일을 입력하고 등록 버튼을 눌러주세요~!")
 
 if "tasks" not in st.session_state:
     st.session_state.tasks = []
@@ -21,7 +23,7 @@ with st.form("task_form"):
             st.warning("할 일을 먼저 입력해 주세요.")
 
 total = len(st.session_state.tasks)
-completed = sum(1 for task in st.session_state.tasks if task["done"])
+completed = sum( 1 for task in st.session_state.tasks if task["done"])
 
 st.divider()
 
