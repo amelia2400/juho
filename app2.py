@@ -11,7 +11,7 @@ with st.form("task_form"):
     new_task = st.text_input("새로운 할 일")
     placeholder="예: 대학 강의 복습하기"
 
-    submitted = st.form_submit_boutton("+ 할 일 등록")
+    submitted = st.form_submit_button("+ 할 일 등록")
 
     if submitted:
         if new_task.strip():
