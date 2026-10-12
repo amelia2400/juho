@@ -28,7 +28,7 @@ st.divider()
 col1, col2 = st.columns(2)
 
 with col1:
-    st.metriC("전체 할 일", total)
+    st.metric("전체 할 일", total)
 with col2:
     st.metric("완료한 일", completed)
 
