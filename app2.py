@@ -21,7 +21,7 @@ with st.form("task_form"):
             st.warning("할 일을 먼저 입력해 주세요.")
 
 total = len(st.session_state.tasks)
-completed = sum(1 for tasks in st.session_state.tasks if task["done"])
+completed = sum(1 for task in st.session_state.tasks if task["done"])
 
 st.divider()
 
